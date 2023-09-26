@@ -31,7 +31,7 @@ void merge_subarr(int *subarr, int *buff, size_t front, size_t mid,
 	for (; n < back; n++)
 		buff[o++] = subarr[n];
 	for (m = front, o = 0; m < back; m++)
-		subarr[i] = buff[k++];
+		subarr[m] = buff[o++];
 
 	printf("[Done]: ");
 	print_array(subarr + front, back - front);
@@ -73,7 +73,7 @@ void merge_sort(int *array, size_t size)
 		return;
 
 	store = malloc(sizeof(int) * size);
-	if (buff == NULL)
+	if (store == NULL)
 		return;
 
 	merge_sort_recursive(array, store, 0, size);

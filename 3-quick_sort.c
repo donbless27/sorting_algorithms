@@ -7,8 +7,8 @@ void quick_sort(int *array, size_t size);
 
 /**
  * swap_ints - A function to swap two integers
- * @a: First integer to be swap
- * @b: Second integer to be swap
+ * @x: First integer to be swap
+ * @y: Second integer to be swap
  */
 void swap_ints(int *x, int *y)
 {
@@ -20,7 +20,7 @@ void swap_ints(int *x, int *y)
 }
 
 /**
- * lomuto_partition - Order a subset of an array of integers        
+ * lomuto_partition - Order a subset of an array of integers
  * @array: Array of integers
  * @size: Size of the array
  * @left: Starting index of the subset to order

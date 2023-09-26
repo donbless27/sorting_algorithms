@@ -8,8 +8,8 @@ void bitonic_sort(int *array, size_t size);
 
 /**
  * swap_ints - Function to swap two integers
- * @a: First integer to swap
- * @b: Second integer to swap
+ * @x: First integer to swap
+ * @y: Second integer to swap
  */
 void swap_ints(int *x, int *y)
 {
@@ -47,7 +47,8 @@ void bitonic_merge(int *array, size_t size, size_t start, size_t seq,
 }
 
 /**
- * bitonic_seq - A function that cConvert an array of integers into a bitonic sequence
+ * bitonic_seq - A function that convert an array of
+ *    integers into a bitonic sequence
  * @array: An array of integers
  * @size:  size of the array
  * @start: Starting index of a block of the building bitonic sequence.
@@ -78,8 +79,8 @@ void bitonic_seq(int *array, size_t size, size_t start, size_t seq, char flow)
  *     in ascending order using the Bitonic sort algorithm
  * @array: Array of integers
  * @size: Size of the array
- * Description: Prints array after each swap. Only works for
- * size = 2^k where k >= 0 (ie. size equal to powers of 2).
+ * Description: Prints array after each swap and it Only works for
+ *   size = 2^k where k >= 0 (ie. size equal to powers of 2)
  */
 void bitonic_sort(int *array, size_t size)
 {

@@ -13,7 +13,7 @@ int get_max(int *array, int size)
 
 	for (top = array[0], m = 1; m < size; m++)
 	{
-		if (array[q] > top)
+		if (array[m] > top)
 			top = array[m];
 	}
 

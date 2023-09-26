@@ -33,7 +33,7 @@ void shell_sort(int *array, size_t size)
 
 	for (; space >= 1; space /= 3)
 	{
-		for (j = gap; j < size; j++)
+		for (j = space; j < size; j++)
 		{
 			k = j;
 			while (k >= space && array[k - space] > array[k])
